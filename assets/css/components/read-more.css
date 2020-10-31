@@ -1,0 +1,17 @@
+.read_more a {
+	color: var(--red);
+	transition: all 400ms cubic-bezier(.19,1,.22,1);
+}
+
+	.read_more a {
+		text-decoration: none;
+	}
+
+	.read_more a:visited {
+		color: var(--red);
+	}
+
+	.read_more a:hover {
+		color: var(--white);
+		text-decoration: none;
+	}

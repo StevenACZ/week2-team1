@@ -1,0 +1,25 @@
+@import './base/typography.css';
+@import './base/global.css';
+@import './base/footer.css';
+
+@import './utils/flex.css';
+@import './utils/font_size.css';
+@import './utils/font_weight.css';
+@import './utils/margin.css';
+
+@import './components/button.css';
+@import './components/link.css';
+@import './components/read-more.css';
+@import './components/hamburger.css';
+@import './components/icons.css';
+@import './components/card.css';
+@import './components/separator.css';
+@import './components/menu.css';
+
+@import './layout/header.css';
+@import './layout/footer.css';
+@import './layout/highlight.css';
+@import './layout/game-list.css';
+@import './layout/decoration.css';
+
+@import './pages/index.css';

@@ -1,0 +1,90 @@
+/* Menu */
+.menu {
+  height: 100%;
+	position: relative;
+	z-index: 1;	
+}
+
+.menu > ul {
+	font-size: 20px;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+	color: var(--black);
+	list-style: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu > ul > li {
+  padding: 0 28px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 400ms cubic-bezier(.19,1,.22,1);
+}
+
+.menu > ul > li:hover {
+  text-decoration: underline;
+  background: var(--black);
+	color: var(--white);
+}
+
+#menu_game {
+  text-decoration: underline;
+  background: var(--black);
+	color: var(--white);
+}
+
+/* Menu toggle */
+.menu-toggle {
+  background: black;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  opacity: 0;
+  transition: all 400ms ease;
+}
+
+.menu-toggle ul {
+  margin-top: 60px;
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.menu-toggle li {
+  margin: 17px;
+  transition: all 400ms ease;
+  text-decoration: transparent;
+}
+
+.menu-toggle li:hover {
+  text-decoration: underline;
+}
+
+.menu-toggle__icons {
+  width: 150px;
+  height: 36px;
+  margin: 17px auto;
+}
+
+@media (max-width: 1000px) {
+  .menu {
+    display: none;
+  }
+
+  #menu_game {
+    text-decoration: underline;
+    background: transparent;
+    color: var(--white);
+  }
+}

@@ -1,0 +1,38 @@
+/* GENERAL */
+:root {
+  --green: #95eac1;
+  --white: #FFFFFF;
+  --red: #ff0036;
+  --gray: #757575;
+  --black: #1b1c20;
+  --blue-fb: #3B5998;
+  --blue-tw:  #00ACED;
+  --blue-itg: #517FA4;
+  --red-ytb: #BB0000;
+  --yellow: #FFC600;
+  --yellow-dark: #FFEC00;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('../../images/html-background.jpg');
+}
+
+/* Wrap */
+.wrap {
+  background-color: var(--green);
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}

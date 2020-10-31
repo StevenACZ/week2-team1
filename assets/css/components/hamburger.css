@@ -1,0 +1,101 @@
+.mobile {
+  display: none;
+}
+
+/* Hamburger */
+.hamburger {
+  width: 25px;
+  height: 18px;
+  display: inline-block;
+  position: absolute;
+  top: 21px;
+  right: 15px;
+  transform: rotate(0deg);
+  z-index: 1001;
+  cursor: pointer;
+  transition: .5s ease-in-out;
+}
+
+.hamburger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: var(--black);
+  border-radius: 4px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+input[type="checkbox"]:checked + div .hamburger span {
+  background: var(--white);
+  z-index: 1000;
+}
+
+.hamburger span:nth-child(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.hamburger span:nth-child(2) {
+  top: 8px;
+  transform-origin: left center;
+}
+
+.hamburger span:nth-child(3) {
+  top: 16px;
+  transform-origin: left center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked + div .hamburger span:nth-child(1) {
+  /* width: 10%; */
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + div .hamburger span:nth-child(2) {
+  transform: rotate(45deg);
+  top: -3px;
+  left: 0px;
+}
+
+input[type="checkbox"]:checked + div .hamburger span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 15px;
+  left: 0px;
+}
+
+/* Logo */
+.main-header__logo {
+  background-image: url('../../images/logos/logo-ab-black.png');
+  background-size: 100% 100%;
+  width: 115px;
+  height: 24px;
+  z-index: 1001;
+  position: absolute;
+  top: 20px;
+  left: 15px;
+  transition: all 400ms ease;
+}
+
+input[type="checkbox"]:checked + div .main-header__logo {
+  background-image: url('../../images/logos/logo-ab-white.png');
+}
+
+
+
+input[type="checkbox"]:checked + div .menu-toggle {
+  z-index: 1000;
+  opacity: 1;
+}
+
+@media (max-width: 1000px) {
+  .mobile {
+    display: block;
+  }
+}

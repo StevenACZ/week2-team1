@@ -1,0 +1,35 @@
+.main-header {
+  height: 90px;
+  background-color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+
+  .main-header__logo {
+    width: 115px;
+  }
+
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+  }
+
+    .desktop__logo > img {
+      width: 232px;
+    }
+
+@media (max-width: 1000px) {
+  .main-header {
+    height: 60px;
+    padding: 0;
+  }
+
+  .desktop {
+    display: none;
+  }
+}

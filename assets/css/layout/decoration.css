@@ -1,0 +1,4 @@
+.decoration > img {
+  height: 325px;
+  object-fit: cover;
+}
